@@ -8,8 +8,6 @@
 }
 \usage{
 simul.commonprob(margprob, corr=0, method="integrate", n1=10^5, n2=10)
-
-data(SimulVals)
 }
 \arguments{
   \item{margprob}{vector of marginal probabilities.}
@@ -48,6 +46,9 @@ data(SimulVals)
 }
 \examples{
 simul.commonprob(seq(0,1,0.5), seq(-1,1,0.5), meth="mo", n1=10^4)
+
+data(SimulVals)
+
 }
 \keyword{distribution}
 \keyword{multivariate}

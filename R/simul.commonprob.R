@@ -4,8 +4,6 @@
 simul.commonprob <- function(margprob, corr=0,
                              method="integrate", n1=10^5,n2=10)
 {
-  require("e1071")
-
   lm <- length(margprob)
   lr <- length(corr)
   
@@ -51,7 +49,7 @@ simul.commonprob <- function(margprob, corr=0,
           require("integrate")
           a <- adapt(2, funct=dmvnorm,
                      lo=c(0,0), up=c(10,10), min=100, max=100000, eps=0.0001,
-                     mu = c(q1,q2), sigma=sigma)
+                     mean = c(q1,q2), sigma=sigma)
           if(a$ifail){
             z[m,n,k] <- NA
           }
@@ -62,7 +60,7 @@ simul.commonprob <- function(margprob, corr=0,
         else{
           x2 <- rep(0,n2)
           for(l in 1:n2){
-            x1 <- rmvnorm(n1, mu = c(q1,q2), sigma=sigma)
+            x1 <- rmvnorm(n1, mean = c(q1,q2), sigma=sigma)
             x2[l] <- sum( (x1[,1] > 0) & (x1[,2] > 0))/n1
           }
           z[m,n,k] <- mean(x2)
