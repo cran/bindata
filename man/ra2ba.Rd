@@ -1,11 +1,11 @@
 \name{ra2ba}
+\alias{ra2ba}
 \title{Convert Real Valued Array to Binary Array}
 \usage{
 ra2ba(x)
 }
-\alias{ra2ba}
 \arguments{
- \item{x}{Array of arbitrary dimension}
+  \item{x}{array of arbitrary dimension}
 }
 \description{
   Converts all values of the real valued array \code{x} to binary values

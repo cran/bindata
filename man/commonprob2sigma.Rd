@@ -1,13 +1,13 @@
 \name{commonprob2sigma}
+\alias{commonprob2sigma}
 \title{Calculate a Covariance Matrix for the Normal Distribution out of
-  a Matrix of Joint Probabilites.}
+  a Matrix of Joint Probabilites}
 \usage{
 commonprob2sigma(commonprob, simulvals)
 }
-\alias{commonprob2sigma}
 \arguments{
-  \item{commonprob}{Matrix of Pairwise Probabilities.}
-  \item{simulvals}{Array received by \code{simul.commonprob}.}
+  \item{commonprob}{matrix of pairwise probabilities.}
+  \item{simulvals}{array received by \code{simul.commonprob}.}
 }
 \description{
   Computes a covariance matrix for a normal distribution which
@@ -22,8 +22,8 @@ commonprob2sigma(commonprob, simulvals)
   the matrix is not positive definite.
 }
 \value{
-A covariance matrix is returned with the same dimensions as
-\code{commonprob}. 
+  A covariance matrix is returned with the same dimensions as
+  \code{commonprob}. 
 }
 \references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
   (1998). On the generation of correlated artificial binary
@@ -32,11 +32,12 @@ A covariance matrix is returned with the same dimensions as
   Economics, \url{http://www.wu-wien.ac.at/am}
 }
 \author{Friedrich Leisch}
-\seealso{\code{\link{simul.commonprob}}}
+\seealso{
+  \code{\link{simul.commonprob}}
+}
 \examples{
 m <- cbind(c(1/2,1/5,1/6),c(1/5,1/2,1/6),c(1/6,1/6,1/2))
 sigma <- commonprob2sigma(m)
 }
-\keyword{binary}
+\keyword{distribution}
 \keyword{multivariate}
-

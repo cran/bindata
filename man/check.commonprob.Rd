@@ -1,9 +1,9 @@
 \name{check.commonprob}
 \title{Check Joint Binary Probabilities}
+\alias{check.commonprob}
 \usage{
 check.commonprob(commonprob)
 }
-\alias{check.commonprob}
 \arguments{
   \item{commonprob}{Matrix of pairwise probabilities.}
 }
@@ -43,7 +43,8 @@ check.commonprob(commonprob)
   Economics, \url{http://www.wu-wien.ac.at/am}
 }
 \author{Andreas Weingessel}
-\seealso{\code{\link{simul.commonprob}}
+\seealso{
+  \code{\link{simul.commonprob}},
   \code{\link{commonprob2sigma}}}
 \examples{
 check.commonprob(cbind(c(0.5, 0.4), c(0.4, 0.8)))
@@ -52,5 +53,5 @@ check.commonprob(cbind(c(0.5, 0.25), c(0.25, 0.8)))
 
 check.commonprob(cbind(c(0.5, 0, 0), c(0, 0.5, 0), c(0, 0, 0.5)))
 }
-\keyword{binary}
+\keyword{distribution}
 \keyword{multivariate}
