@@ -64,10 +64,7 @@ bincorr2commonprob <- function(margprob, bincorr) {
 commonprob2sigma <- function(commonprob, simulvals=NULL) {
 
   if(is.null(simulvals)){
-    if(!("SimulVals" %in% ls(envir=.GlobalEnv)))
-      eval(data(SimulVals, package="bindata"), envir=.GlobalEnv)
-
-    simulvals <- eval(SimulVals, envir=.GlobalEnv)
+      simulvals <- SimulVals
   }
       
   
