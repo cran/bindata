@@ -1,0 +1,8 @@
+check.commonprob         Check Joint Binary Probabilities
+commonprob2sigma         Calculate a Covariance Matrix for the Normal
+                         Distribution out of   a Matrix of Joint
+                         Probabilites.
+condprob                 Conditional Probabilities of Binary Data
+ra2ba                    Convert Real Valued Array to Binary Array
+rmvbin                   Multivariate Binary Random Variates
+simul.commonprob         Simulate Joint Binary Probabilities
