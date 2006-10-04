@@ -46,7 +46,7 @@ simul.commonprob <- function(margprob, corr=0,
           cat("done\n")
         }
         else if(method==1){
-          require("integrate")
+          require("adapt")
           a <- adapt(2, funct=dmvnorm,
                      lo=c(0,0), up=c(10,10), min=100, max=100000, eps=0.0001,
                      mean = c(q1,q2), sigma=sigma)
