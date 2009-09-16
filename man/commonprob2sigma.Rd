@@ -1,7 +1,7 @@
 \name{commonprob2sigma}
 \alias{commonprob2sigma}
-\title{Calculate a Covariance Matrix for the Normal Distribution out of
-  a Matrix of Joint Probabilites}
+\title{Calculate a Covariance Matrix for the Normal Distribution from
+  a Matrix of Joint Probabilities}
 \usage{
 commonprob2sigma(commonprob, simulvals)
 }
@@ -11,7 +11,7 @@ commonprob2sigma(commonprob, simulvals)
 }
 \description{
   Computes a covariance matrix for a normal distribution which
-  corresponds to a binary distribution with marginal probabilites given
+  corresponds to a binary distribution with marginal probabilities given
   by \code{diag(commonprob)} and pairwise probabilities given by
   \code{commonprob}. 
 

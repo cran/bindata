@@ -3,7 +3,7 @@
 \title{Convert Binary Correlation Matrix to Matrix of Joint
   Probabilities}
 \description{
-  Compute a matrix of common probabilites for a binary random vector
+  Compute a matrix of common probabilities for a binary random vector
   from given marginal probabilities and correlations.
 }
 \usage{

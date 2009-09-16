@@ -11,7 +11,7 @@ check.commonprob(commonprob)
   The main diagonal elements \code{commonprob[i,i]} are interpreted as
   probabilities \eqn{p_{A_i}}{p(A_i)} that a binary variable \eqn{A_i}
   equals 1. The 
-  off-diagonal elements \code{commonprob[i,j]} are the probabilites
+  off-diagonal elements \code{commonprob[i,j]} are the probabilities
   \eqn{p_{A_iA_j}}{p(A_iA_j)} that both \eqn{A_i} and \eqn{A_j} are 1.
 
   This programs checks some necessary conditions on these probabilities
