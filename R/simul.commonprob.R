@@ -45,17 +45,13 @@ simul.commonprob <- function(margprob, corr=0,
           z[m,n,k] <- margprob[m]
           cat("done\n")
         }
-        else if(method==1){
-          require("adapt")
-          a <- adapt(2, funct=dmvnorm,
-                     lo=c(0,0), up=c(10,10), min=100, max=100000, eps=0.0001,
-                     mean = c(q1,q2), sigma=sigma)
-          if(a$ifail){
-            z[m,n,k] <- NA
-          }
-          else{
-            z[m,n,k] <- a$finest
-          }
+        else if(method==1) {
+            a <- pmvnorm(c(0, 0), c(Inf, Inf),
+                         mean = c(q1, q2), sigma = sigma)
+            z[m,n,k] <- if(attr(a, "msg") != "Normal Completion")
+                NA
+            else
+                c(a)
         }
         else{
           x2 <- rep(0,n2)
