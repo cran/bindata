@@ -40,7 +40,7 @@ check.commonprob(commonprob)
   (1998). On the generation of correlated artificial binary
   data. Working Paper Series, SFB ``Adaptive Information Systems and
   Modelling in Economics and Management Science'', Vienna University of
-  Economics, \url{http://www.wu-wien.ac.at/am}
+  Economics.
 }
 \author{Andreas Weingessel}
 \seealso{

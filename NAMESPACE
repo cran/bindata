@@ -1,5 +1,6 @@
 importFrom("e1071", "interpolate")
 importFrom("mvtnorm", "pmvnorm", "rmvnorm")
+importFrom("stats", "approxfun", "qnorm")
 
 export("SimulVals",
        "bincorr2commonprob",
