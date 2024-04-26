@@ -1,10 +1,10 @@
-6ac1eb74456ab8095dfe3a601f9dc956 *DESCRIPTION
+030554cebbc190a589d40f3b36cd8a4e *DESCRIPTION
 64a6c80b4d3d391883fac2390be43c61 *NAMESPACE
 165667d47eb3454316cee0e51d111bdb *R/multbin.R
 9fe98b8d7581b2561edfac0a56327b02 *R/simul.commonprob.R
-8338f66312c4ae0b0f86c338008d1392 *R/sysdata.rda
+1dd5b940c1dfc64d8423b8b7952ed635 *R/sysdata.rda
 4f64abf6281f476d0956ea7bf7b085be *README
-4522083e2b95ef765ce96f014ed1ffbc *inst/doc/artdatagen.pdf
+50762eff38cd2b0ef12afd34e56b284b *inst/doc/artdatagen.pdf
 f8509ff558d31ab4ffe3afcef4c52b18 *man/SimulVals.Rd
 a37fa622b60150464583952b9c6c5112 *man/bincorr2commonprob.Rd
 31ee0066832c172a4d58b4ce4552667e *man/check.commonprob.Rd
