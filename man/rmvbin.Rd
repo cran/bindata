@@ -35,11 +35,13 @@ rmvbin(n, margprob, commonprob=diag(margprob),
   probabilities are sampled.  Negative values are converted to 0,
   positive values to 1.
 }
-\references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
-  (1998). On the generation of correlated artificial binary
-  data. Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'', Vienna University of
-  Economics.
+\references{
+  Friedrich Leisch, Andreas Weingessel and Kurt Hornik (1998).
+  On the generation of correlated artificial binary data.
+  Working Paper Series, SFB ``Adaptive Information Systems and
+  Modelling in Economics and Management Science'',
+  Vienna University of Economics.
+  \doi{10.57938/6884f809-93bc-4497-ab2b-fc1611198f5b}.
 }
 \author{Friedrich Leisch}
 \seealso{
@@ -53,12 +55,25 @@ rmvbin(10, margprob=c(0.3,0.9))
 
 ## correlated columns
 m <- cbind(c(1/2,1/5,1/6),c(1/5,1/2,1/6),c(1/6,1/6,1/2))
-rmvbin(10,commonprob=m)
+rmvbin(10, commonprob=m)
 
 ## same as the second example, but faster if the same probabilities are
 ## used repeatedly (commonprob2sigma rather slow)
 sigma <- commonprob2sigma(m)
-rmvbin(10,margprob=diag(m),sigma=sigma)
+rmvbin(10, margprob = diag(m), sigma = sigma)
+
+## The default 'simulvals' may not work for very small marginal
+## probabilities.  E.g., for 
+p1 <- 0.0206
+p2 <- 0.0318
+m <- matrix(c(1, 0.5, 0.5, 1), ncol = 2)
+## rmvbin(1, margprob = c(p1,p2), bincorr = m) fails with 'Extrapolation
+## occurred ... margprob and commonprob not compatible?'
+## (reported by <Ping.Mahling@pfizer.com> in 2025-12).
+## Using e.g.
+s <- simul.commonprob(margprob = c(p1, p2), corr = seq(-1, 1, by = 0.05))
+## makes things work:
+rmvbin(10, margprob = c(p1,p2), bincorr = m, simulvals = s)
 }
 \keyword{multivariate}
 \keyword{distribution}
