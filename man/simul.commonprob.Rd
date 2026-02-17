@@ -33,11 +33,8 @@ simul.commonprob(margprob, corr=0, method="integrate", n1=10^5, n2=10)
   \code{simul.commonprob} returns an array of dimension
   \code{c(length(margprob), length(margprob), length(corr))}. 
 }
-\references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
-  (1998). On the generation of correlated artificial binary
-  data. Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'', Vienna University of
-  Economics.
+\references{
+  \bibshow{bindata::Leisch+Weingessel+Hornik:1998}
 }
 \author{Friedrich Leisch}
 \seealso{

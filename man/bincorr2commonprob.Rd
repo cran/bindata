@@ -19,11 +19,8 @@ bincorr2commonprob(margprob, bincorr)
   probability that variables \eqn{i} and \eqn{j} both equal 1 in element
   \eqn{(i,j)} (if \eqn{i \ne j}{i != j}).
 }
-\references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
-  (1998). On the generation of correlated artificial binary
-  data. Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'', Vienna University of
-  Economics.
+\references{
+  \bibshow{bindata::Leisch+Weingessel+Hornik:1998}
 }
 \author{Friedrich Leisch}
 \seealso{

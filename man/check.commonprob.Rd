@@ -36,11 +36,8 @@ check.commonprob(commonprob)
   fulfilled. The attribute \code{"message"} of the return value contains
   some information on the errors that were found.
 }
-\references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
-  (1998). On the generation of correlated artificial binary
-  data. Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'', Vienna University of
-  Economics.
+\references{
+  \bibshow{bindata::Leisch+Weingessel+Hornik:1998}
 }
 \author{Andreas Weingessel}
 \seealso{

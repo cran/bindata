@@ -1,5 +1,5 @@
 Package: bindata
-Version: 0.9-23
+Version: 0.9-24
 Title: Generation of Artificial Binary Data
 Authors@R: c(person("Friedrich", "Leisch", role = c("aut"),
 		    comment = c(ORCID = "0000-0001-7278-1983",
@@ -12,7 +12,7 @@ Description: Generation of correlated artificial binary data.
 License: GPL-2
 Imports: e1071, mvtnorm (>= 0.7-0)
 NeedsCompilation: no
-Packaged: 2026-01-11 12:30:33 UTC; hornik
+Packaged: 2026-02-17 11:26:24 UTC; hornik
 Author: Friedrich Leisch [aut] (ORCID: <https://orcid.org/0000-0001-7278-1983>,
     maintainer up to 2024),
   Andreas Weingessel [aut],
@@ -20,4 +20,4 @@ Author: Friedrich Leisch [aut] (ORCID: <https://orcid.org/0000-0001-7278-1983>,
 Maintainer: Kurt Hornik <Kurt.Hornik@R-project.org>
 Depends: R (>= 2.10)
 Repository: CRAN
-Date/Publication: 2026-01-11 12:37:41 UTC
+Date/Publication: 2026-02-17 19:11:54 UTC

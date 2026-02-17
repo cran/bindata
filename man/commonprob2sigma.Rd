@@ -25,11 +25,8 @@ commonprob2sigma(commonprob, simulvals)
   A covariance matrix is returned with the same dimensions as
   \code{commonprob}. 
 }
-\references{Friedrich Leisch, Andreas Weingessel and Kurt Hornik
-  (1998). On the generation of correlated artificial binary
-  data. Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'', Vienna University of
-  Economics.
+\references{
+  \bibshow{bindata::Leisch+Weingessel+Hornik:1998}
 }
 \author{Friedrich Leisch}
 \seealso{

@@ -36,12 +36,7 @@ rmvbin(n, margprob, commonprob=diag(margprob),
   positive values to 1.
 }
 \references{
-  Friedrich Leisch, Andreas Weingessel and Kurt Hornik (1998).
-  On the generation of correlated artificial binary data.
-  Working Paper Series, SFB ``Adaptive Information Systems and
-  Modelling in Economics and Management Science'',
-  Vienna University of Economics.
-  \doi{10.57938/6884f809-93bc-4497-ab2b-fc1611198f5b}.
+  \bibshow{bindata::Leisch+Weingessel+Hornik:1998}  
 }
 \author{Friedrich Leisch}
 \seealso{
